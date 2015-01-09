@@ -37,6 +37,7 @@ Used both logical operators and mathmematical operators
 Used one conditional statement
 The purpose of this function is to calculate the number of troops or storm troopers used in the madlib story
 '''
+#define the function
 
 def calcTroops(numberTroops,numberNoun):
 	if numberTroops < 50 and numberNoun < 500:
@@ -46,6 +47,8 @@ def calcTroops(numberTroops,numberNoun):
 		troops = numberNoun + numberTroops
 		return troops
 
+#call the function
+
 troop = calcTroops(numberTroops,numberNoun)
 
 '''
@@ -54,6 +57,7 @@ Used both logical and mathmematical operators
 Used one conditional statement
 The purpose of this function is to calculate the number of a raw_input noun to use in the madlib
 '''
+#define the function
 
 def calcNoun(numberTroops,numberNoun):
 	if numberTroops > 50 and numberNoun > 800:
@@ -62,6 +66,8 @@ def calcNoun(numberTroops,numberNoun):
 	else:
 		noun = numberNoun * numberTroops
 		return noun
+
+#call the function
 
 noun = calcNoun(numberTroops,numberNoun)
 
@@ -73,6 +79,8 @@ If the user enters jedi the story addresses a jedi master by putting master in f
 if the user enters sith, the story slightly alters and addresses a sith master by changing all the 
 words master to Darth.
 '''
+
+#define the function
 
 def calcStory(story):
 	if story == "jedi":
@@ -86,9 +94,11 @@ def calcStory(story):
 			print p 
 		print "came out of hyperspace in the " + sillyWord3 + " system with " + str(noun) + " " + noun2 + "s to aid the alliance in the " + adjective2 + " " + action + "."
 
+#call the function
+
 finalStory = calcStory(story)
 
-
+#End Madlib
 
 
 
