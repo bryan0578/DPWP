@@ -30,8 +30,9 @@ adjective2 = raw_input("Enter another adjective: ")
 action = raw_input("Finally enter an action: ")
 people = ["Han","Chewy","Leia","C3P0"]
 
+
 '''
-Funtion that takes both raw_input integers and calculates the nuber of troops used in the madlib.
+Funtion that takes both raw_input integers and calculates the number of troops used in the madlib.
 Used both logical operators and mathmematical operators
 Used one conditional statement
 '''
@@ -45,5 +46,39 @@ def calcTroops(numberTroops,numberNoun):
 		return troops
 
 troop = calcTroops(numberTroops,numberNoun)
+
+'''
+Function that takes both raw_input integers and calculates the number of the noun used in the madlib
+Used both logical and mathmematical operators
+Used one conditional statement
+'''
+
+def calcNoun(numberTroops,numberNoun):
+	if numberTroops > 50 and numberNoun > 800:
+		noun = numberNoun/numberTroops
+		return noun
+	else:
+		noun = numberNoun * numberTroops
+		return noun
+
+noun = calcNoun(numberTroops,numberNoun)
+
+def calcStory(story):
+	if story == "jedi":
+		print "A long time ago in a galaxy far, far away, The rebel alliance has had there first victory against the empires new villain but " + side[story] + " " + sillyWord1 + " and his " + adjective1 + " " + noun1 + " flew to the planet of " + sillyWord2 + "  " + side[story] + " " + sillyWord1 + " has begun his defense with " + str(troop) + " of his most elite troopers. Meanwhile "
+		for p in people:
+			print p 
+		print "came out of hyperspace in the " + sillyWord3 + " system with " + str(noun) + " " + noun2 + "s to aid the alliance in the " + adjective2 + " " + action + "."
+	else:
+		print "A long time ago in a galaxy far, far away, The rebel alliance has had there first victory against the empires new villain " + side[story] + " " + sillyWord1 + " and his " + adjective1 + " " + noun1 + ". But the war has only just begun. On the planet of " + sillyWord2 + "  " + side[story] + " " + sillyWord1 + " has begun his attack with " + str(troop) + " of his most elite storm troopers. Meanwhile "
+		for p in people:
+			print p 
+		print "came out of hyperspace in the " + sillyWord3 + " system with " + str(noun) + " " + noun2 + "s to aid the alliance in the " + adjective2 + " " + action + "."
+
+finalStory = calcStory(story)
+
+
+
+
 
 
