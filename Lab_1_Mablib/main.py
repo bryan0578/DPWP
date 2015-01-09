@@ -10,9 +10,23 @@ sillyWord1 = raw_input("Enter a silly word: ")
 adjective1 = raw_input("Enter an adjective: ")
 noun1 = raw_input("Enter a noun: ")
 sillyWord2 = raw_input("Enter a second silly word: ")
-numberValue1 = raw_input("Enter a number greater than 0 but less than 100: ")
+numberTroops = int(raw_input("Enter a number greater than 0 but less than 100: "))
 sillyWord3 = raw_input("Enter a third silly word: ")
-numberValue2 = raw_input("Enter another number greater than 0 but less than 1000: ")
+numberNoun = int(raw_input("Enter another number greater than 0 but less than 1000: "))
 noun2 = raw_input("Enter another noun: ")
 adjective2 = raw_input("Enter another adjective: ")
 action = raw_input("Finally enter an action: ")
+people = ["Han","Chewy","Leia","C3P0"]
+
+
+
+def calcTroops(numberTroops,numberNoun):
+	if numberTroops < 50:
+		troops = numberTroops*numberNoun
+		return troops
+	else:
+		troops = numberNoun + numberTroops
+		return troops
+
+troop = calcTroops(numberTroops,numberNoun)
+print troop
