@@ -35,6 +35,7 @@ people = ["Han","Chewy","Leia","C3P0"]
 Funtion that takes both raw_input integers and calculates the number of troops used in the madlib.
 Used both logical operators and mathmematical operators
 Used one conditional statement
+The purpose of this function is to calculate the number of troops or storm troopers used in the madlib story
 '''
 
 def calcTroops(numberTroops,numberNoun):
@@ -51,6 +52,7 @@ troop = calcTroops(numberTroops,numberNoun)
 Function that takes both raw_input integers and calculates the number of the noun used in the madlib
 Used both logical and mathmematical operators
 Used one conditional statement
+The purpose of this function is to calculate the number of a raw_input noun to use in the madlib
 '''
 
 def calcNoun(numberTroops,numberNoun):
@@ -62,6 +64,15 @@ def calcNoun(numberTroops,numberNoun):
 		return noun
 
 noun = calcNoun(numberTroops,numberNoun)
+
+'''
+Function that chooses the appropriate story to print in the madlib
+Uses a logical operator and includes a for loop to loop through the names given in the array
+The purpose of this function is the appropriate story to print according to the raw_input
+If the user enters jedi the story addresses a jedi master by putting master in front of a silly word, 
+if the user enters sith, the story slightly alters and addresses a sith master by changing all the 
+words master to Darth.
+'''
 
 def calcStory(story):
 	if story == "jedi":
