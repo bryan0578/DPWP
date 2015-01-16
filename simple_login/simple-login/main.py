@@ -45,8 +45,8 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 			contact = self.request.GET['contact']
 			reason = self.request.GET['reason']
 
-			self.response.write(page_head + user + ' ' + email + page_body + page_close)
-				pass
+			self.response.write(page_head + page_body + page_close)
+			
 		else:
 			self.response.write(page_head + page_body + page_close) #PRINT
       
