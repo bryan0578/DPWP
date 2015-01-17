@@ -12,7 +12,7 @@ class MainHandler(webapp2.RequestHandler):
     	p = Page()
 
 	if self.request.GET:
-		#stores info we got from the formm
+		#stores info we got from the form 
 		person = Delivery()
 		person.f_name = self.request.GET['f_name']
 		person.l_name = self.request.GET['l_name']
@@ -25,6 +25,7 @@ class MainHandler(webapp2.RequestHandler):
 		person.phone = self.request.GET['phone']
 		person.order = self.request.GET['order']
 
+		#Writes the information from the form 
 		self.response.write(p.head)
 		self.response.write('<div id="box">' + person.f_name + ' ' + person.l_name)
 		self.response.write('<br /> Your order will be delivered to: <br /> ' + person.address)
@@ -40,7 +41,9 @@ class MainHandler(webapp2.RequestHandler):
 	else:
 		self.response.write(p.head + p.body + p.close) #PRINT
 
+
 class Delivery(object):
+	#class that instantiates the person information 
 	def __init__(self):
 		self.f_name = ""
 		self.l_name = ""
