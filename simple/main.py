@@ -1,67 +1,90 @@
-
+'''
+Bryan Cash
+1/15/2015
+DPW
+Simple Login
+'''
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-    	
-
     	page_head = '''<!DOCTYPE HTML>
 <html>
 	<head>
-		<title></title>
+		<title>Order</title>
 	</head>
 	<body>
-		<h1>Employee Contact Database</h1>'''
+		<h1>Delivery</h1>'''
 
-	page_body = '''<h2>Add Employee Contact</h2>
+	page_body = '''<h2>Enter Delivery Information</h2>
 			<div id="form_box">
 				<form method="GET">
 					<label>First Name: </label><input type="text" name="f_name" /><br />
 					<label>Last Name </label><input type="text" name="l_name" /><br />
-					<label>Email: </label><input type="text" name="email" /><br />
-					<label>Phone: </label><input type="tel" name="phone" /><br />
-					<p>Preferred Contact Method: </p>
-						<label>Phone</label>
-							<input type="radio" name="contact" value="phone" checked/>
-						<label>Email</label>
-							<input type="radio" name="contact" value="email" /><br />
-					<label>Reason for Contact: </label><br />
-					<select name="reason">
-						<option value="Pay Status">Pay Status</option>
-						<option value="Request for Work">Request for Work</option>
-						<option value="Fired">Fired</option>
-					</select><br />
+					<label>Address: </label><input type="text" name="address" /><br />
+					<select name="residence">
+						<option value="House">House</option>
+						<option value="Apt">Apt</option>
+					</select>
+					<label>Apt Number: </label><input type="text" name="apt" /><br />
+					<label>City: </label><input type="text" name="city" /></br>
+					<label>State: </label><input type="text" name="state" />
+					<label>Zip: </label><input type="text" name="zip" /><br />
+					<label>Phone: </label><input type="text" name="phone" /><br />
+					<p>Would you like this order now or at a later time: 
+						<label>Now</label>
+							<input type="radio" name="order" value="Now" checked/>
+						<label>Later</label>
+							<input type="radio" name="order" value="Later" /><br />
+					</p>
 				<input type="submit" value="Submit" />
 			</div>'''
 
 	page_close = '''</form>
 	</body>
 </html>'''
-
-
 	if self.request.GET:
 		#stores info we got from the formm
-		f_name = self.request.GET['f_name']
-		l_name = self.request.GET['l_name']
-		email = self.request.GET['email']
-		phone = self.request.GET['phone']
-		contact = self.request.GET['contact']
-		reason = self.request.GET['reason']
+		person = Delivery()
+		person.f_name = self.request.GET['f_name']
+		person.l_name = self.request.GET['l_name']
+		person.address = self.request.GET['address']
+		person.residence = self.request.GET['residence']
+		person.apt = self.request.GET['apt']
+		person.city = self.request.GET['city']
+		person.state = self.request.GET['state']
+		person.zip = self.request.GET['zip']
+		person.phone = self.request.GET['phone']
+		person.order = self.request.GET['order']
 
-		self.response.write(page_head + str(Employee()) + page_close)
+		self.response.write(page_head)
+		self.response.write(person.f_name + ' ' + person.l_name)
+		self.response.write('<br />' + person.address)
+		self.response.write('<br /> ' + person.residence)
+		self.response.write(' ' + person.apt)
+		self.response.write('<br /> ' + person.city)
+		self.response.write('</br /> ' + person.state)
+		self.response.write(' ' + person.zip)
+		self.response.write('</br /> ' + person.phone)
+		self.response.write('</br /> I would like this order ' + person.order + '.')
+		self.response.write(page_close)
 			
 	else:
 		self.response.write(page_head + page_body + page_close) #PRINT
 
-
-class Employee(object):
+class Delivery(object):
 	def __init__(self):
 		self.f_name = ""
 		self.l_name = ""
-		self.email = ""
+		self.address = ""
+		self.residence = ""
+		self.apt = ""
+		self.city = ""
+		self.state = ""
+		self.zip = ""
 		self.phone = ""
-		self.contact = ""
-		self.reason = ""
+		self.order = ""
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
