@@ -9,7 +9,7 @@ class FavoriteGame(object):
         self.__games_list.append(g)
         print g.game
 
-    def complile_list(self):
+    def compile_list(self):
         output = ''
         for game in self.__games_list:
             output += game.initials + ' ' + game.s + '<br />'
