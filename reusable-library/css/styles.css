@@ -1,0 +1,84 @@
+html{
+    background: #000000;
+    color: #fff;
+}
+body{
+    font-family:Arial;
+}
+#head{
+    width:35%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#form{
+    width:35%;
+    border: 2px solid #fff;
+    border-radius:10px;
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+h2{
+    text-align:center;
+    background: #34d96e;
+    background-image: -webkit-linear-gradient(top, #34d96e, #0b5710);
+    background-image: -moz-linear-gradient(top, #34d96e, #0b5710);
+    background-image: -ms-linear-gradient(top, #34d96e, #0b5710);
+    background-image: -o-linear-gradient(top, #34d96e, #0b5710);
+    background-image: linear-gradient(to bottom, #34d96e, #0b5710);
+    padding:20px;
+    width:100%;
+    margin-left:-20px;
+    margin-top:-20px;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+}
+.input{
+    width:100%;
+    height:20px;
+    margin:10px;
+    border-radius:5px;
+
+
+}
+.i{
+    margin:50px;
+    height:20px;
+
+}
+#input{
+    height:20px;
+}
+#button{
+    text-align:center;
+}
+.btn {
+  background: #34d96e;
+  background-image: -webkit-linear-gradient(top, #34d96e, #0b5710);
+  background-image: -moz-linear-gradient(top, #34d96e, #0b5710);
+  background-image: -ms-linear-gradient(top, #34d96e, #0b5710);
+  background-image: -o-linear-gradient(top, #34d96e, #0b5710);
+  background-image: linear-gradient(to bottom, #34d96e, #0b5710);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc893c;
+  background-image: -webkit-linear-gradient(top, #fc893c, #57330c);
+  background-image: -moz-linear-gradient(top, #fc893c, #57330c);
+  background-image: -ms-linear-gradient(top, #fc893c, #57330c);
+  background-image: -o-linear-gradient(top, #fc893c, #57330c);
+  background-image: linear-gradient(to bottom, #fc893c, #57330c);
+  text-decoration: none;
+}

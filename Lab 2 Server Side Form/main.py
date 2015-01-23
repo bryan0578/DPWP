@@ -5,7 +5,7 @@ DPW
 Simple Login
 '''
 import webapp2
-from pages import Page 
+from pages import Page, Delivery
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -25,36 +25,12 @@ class MainHandler(webapp2.RequestHandler):
 		person.phone = self.request.GET['phone']
 		person.order = self.request.GET['order']
 
-		#Writes the information from the form 
-		self.response.write(p.head)
-		self.response.write('<div id="box">' + person.f_name + ' ' + person.l_name)
-		self.response.write('<br /> Your order will be delivered to: <br /> ' + person.address)
-		self.response.write(' ' + person.apt)
-		self.response.write('<br /> ' + person.city)
-		self.response.write('</br /> ' + person.state)
-		self.response.write(' ' + person.zip)
-		self.response.write('<br /> Your residence is a(an) ' + person.residence)
-		self.response.write('</br /> Your order is under phone number ' + person.phone)
-		self.response.write('</br /> and You would like this order ' + person.order + '.')
-		self.response.write('<br /> Your oder should be at your door in 45 minutes' +'</div>' + p.close)
-			
+#Writes the information from the form 
+
+		p.data = person
+		self.response.write(p.results())
 	else:
-		self.response.write(p.head + p.body + p.close) #PRINT
-
-
-class Delivery(object):
-	#class that instantiates the person information 
-	def __init__(self):
-		self.f_name = ""
-		self.l_name = ""
-		self.address = ""
-		self.residence = ""
-		self.apt = ""
-		self.city = ""
-		self.state = ""
-		self.zip = ""
-		self.phone = ""
-		self.order = ""
+		self.response.write(p.print_out()) #PRINT
 
 
 
