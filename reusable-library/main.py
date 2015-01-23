@@ -1,7 +1,7 @@
 '''
 Bryan Cash
 1/21/2015
-DWP
+DPW
 Reusable Library
 '''
 import webapp2
@@ -31,7 +31,7 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             md1.game = self.request.GET['game']
             md1.s = self.request.GET['score']
-            md1.initials = self.request.GET['initials']
+            md1.i = self.request.GET['initials']
             md1.players = self.request.GET['players']
             #here I call the instance of favorite games and pass in the stored information from the HighScores data object and run the add_game method
             lib.add_game(md1)

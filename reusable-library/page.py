@@ -22,7 +22,7 @@ class Page(object):
         self.input = '''
         <div id="head">
             <h1>High Score Tracker</h1>
-            <p>Keep track of your high scores. Just enter the name of the game your high               score your initials and select multiplayer or single player, hit add game and see all of your high scores</p>
+            <p>Keep track of your high scores. Just enter the name of the game your high score your initials and select multiplayer or single player, hit add game and see all of your high scores</p>
         </div>
         <div id="form">
             <h2>Keep track of your High Scores</h2>
@@ -64,7 +64,7 @@ class Page(object):
         return input_page
 
     def print_results(self):
-        self.results = self.head + self.results + self.close
+        self.results = self.head + self.input + self.results + self.close
         self.results = self.results.format(**locals())
         return self.results
 
