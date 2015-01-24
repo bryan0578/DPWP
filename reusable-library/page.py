@@ -1,12 +1,20 @@
+'''
+Bryan Cash
+1/21/2015
+DPW
+Reusable Library
+'''
 
+
+#Here I created my Page object
 class Page(object):
     #The constructor function that initializes the class
     def __init__(self):
-        #create a private title attribute
+        #Here I created my title attribute that contains the welcome text
         self.title = "Welcome!"
-        #create a public css attribute
+        #Here I created my css attribute this points to the css file in html
         self.css = "css/styles.css"
-        #create  a private heading attribute where the beginning of the html code will be written for all the views of the page
+        #Here I created my head attribute this holds all the information that will be the html for each view
         self.head = '''
 <!DOCTYPE HTML>
 <html>
@@ -15,10 +23,7 @@ class Page(object):
         <link href="{self.css}" rel="stylesheet" type="text/css" />
     </head>
     <body>'''
-        #create a body attribute where all the html body elements will be located
-        #create an html form with at least five inputs
-        #make sure form uses GET method
-        #create html div tags for css styles
+        #here I created the input view, this holds all the html for the form view
         self.input = '''
         <div id="head">
             <h1>High Score Tracker</h1>
