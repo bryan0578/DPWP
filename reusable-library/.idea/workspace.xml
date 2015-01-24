@@ -36,21 +36,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1755">
-                  <caret line="110" column="15" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
+                <state vertical-scroll-proportion="0.09803922" vertical-offset="0" max-vertical-offset="1860">
+                  <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="page.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/page.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.86037236" vertical-offset="598" max-vertical-offset="1455">
-                  <caret line="79" column="127" selection-start-line="79" selection-start-column="127" selection-end-line="79" selection-end-column="127" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+                  <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -81,8 +81,8 @@
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/library.py" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/page.py" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
@@ -396,18 +396,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1755">
-          <caret line="110" column="15" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.py">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86037236" vertical-offset="598" max-vertical-offset="1455">
-          <caret line="79" column="127" selection-start-line="79" selection-start-column="127" selection-end-line="79" selection-end-column="127" />
+        <state vertical-scroll-proportion="0.09803922" vertical-offset="0" max-vertical-offset="1860">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
