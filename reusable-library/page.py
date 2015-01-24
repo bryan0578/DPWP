@@ -53,13 +53,14 @@ class Page(object):
                 </div>
             </form>
         </div>'''
+        #Here I created the attribute that will hold the heading and beginning of a div container for the results view
         self.container_head = '''<h2>Here is your list of High Scores</h2>
         <div id="container">
 
         '''
-
+        #Here I created the results attribute I left this as an empty string so that the output from the library could fill it in
         self.results = ''
-
+        #This is where I closed the container div by making a container_close attribute
         self.container_close = '</div>'
         #create a close attribute which will contain the ending html code for all views of the page
         self.close = '''
