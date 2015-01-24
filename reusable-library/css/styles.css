@@ -98,6 +98,7 @@ h2{
   background-image: linear-gradient(to bottom, #fc893c, #57330c);
   text-decoration: none;
 }
+/*This will style the container div for the results view*/
 #container{
     width:60%;
     padding:20px;
@@ -110,6 +111,7 @@ h2{
     margin-right:auto;
 
 }
+/*The next four pieces of code is taken from the output from the compile list method to style the info in the results page*/
 .results1{
     margin-top:10px;
     text-align:center;
