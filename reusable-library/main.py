@@ -38,6 +38,7 @@ class MainHandler(webapp2.RequestHandler):
         '''
         if self.request.GET:
             new_game.game = self.request.GET['game']
+            #here I made sure the the input from request.GET is treated as an integer for the average calculation
             new_game.s = int(self.request.GET['score'])
             new_game.i = self.request.GET['initials']
             new_game.players = self.request.GET['players']
