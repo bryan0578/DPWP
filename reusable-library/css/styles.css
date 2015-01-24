@@ -4,15 +4,18 @@ Bryan Cash
 DPW
 Reusable Library
 */
-
+/*Here I imported a web safe font from google fonts*/
 @import url(http://fonts.googleapis.com/css?family=Orbitron:700);
+/*I set the background and color for the html document to black and white*/
 html{
     background: #000000;
     color: #fff;
 }
+/*I set the font to arial for the body*/
 body{
     font-family:Arial;
 }
+/*Here I styled the heading of my page*/
 #head{
     width:35%;
     text-align:center;
