@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron:700);
 html{
     background: #000000;
     color: #fff;
@@ -82,6 +83,29 @@ h2{
   background-image: linear-gradient(to bottom, #fc893c, #57330c);
   text-decoration: none;
 }
-#results{
-    color:#fff;
+#container{
+    width:60%;
+    padding:20px;
+    border: 5px solid #34d96e;
+    border-radius:10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size:24px;
+    color:#34d96e;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.results1{
+    margin-top:10px;
+    text-align:center;
+}
+.results2{
+    text-align:center;
+}
+.results3{
+    text-align:center;
+}
+#average{
+    margin:70px;
+    text-align:center;
 }

@@ -27,7 +27,7 @@ class FavoriteGame(object):
         #Using a for loop I looped through the array of games and compiled a list of all the information
         for game in self.__games_list:
             #here I put together the information to be used in html code for the list
-            output += '<div id="results1">' + game.game + ' ' + game.players + '</div><div id="results2"> ' + game.i + ' ' + str(game.s) + '</div>'
+            output += '<div class="results1">' + game.game + '<div class="results4"> ' + game.players + '</div>' + '</di><div class="results2"> ' + game.i + '</div><div class="results3">' + str(game.s) + '</div>'
         #Finially I return the output to be printed to screen
         return output
 
@@ -46,7 +46,7 @@ class FavoriteGame(object):
         #Then I set up a varaible to hold the calculation of the sum of all the scores divided by the length of all the scores
         average = total_sum/num
         #Finally I return a string with a message and the average score converted to a string to be printed on the screen
-        return  'Your average high schore is ' + str(average)
+        return  '<div id="average">Your average high schore is ' + str(average) + '</div>'
 
 
 #this is my data object

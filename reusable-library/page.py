@@ -48,9 +48,14 @@ class Page(object):
                 </div>
             </form>
         </div>'''
+        self.container_head = '''<h2>Here is your list of High Scores</h2>
+        <div id="container">
+
+        '''
 
         self.results = ''
 
+        self.container_close = '</div>'
         #create a close attribute which will contain the ending html code for all views of the page
         self.close = '''
     </body>
@@ -64,7 +69,7 @@ class Page(object):
         return input_page
 
     def print_results(self):
-        self.results = self.head + self.results + self.close
+        self.results = self.head + self.container_head + self.results + self.container_close + self.close
         self.results = self.results.format(**locals())
         return self.results
 
