@@ -31,7 +31,7 @@ class Page(object):
                     <label>Name of Game: </label><input class="input" type="text" name="game" /><br />
                 </div>
                 <div class="i">
-                    <label>Your High Score: </label><input class="input" type="text" name="score" /><br />
+                    <label>Your High Score: </label><input class="input" type="number" name="score" /><br />
                 </div>
                 <div class="i">
                     <label>Your Initials: </label><input class="input" type="text" name="initials" /><br />
@@ -64,7 +64,7 @@ class Page(object):
         return input_page
 
     def print_results(self):
-        self.results = self.head + self.input + self.results + self.close
+        self.results = self.head + self.results + self.close
         self.results = self.results.format(**locals())
         return self.results
 

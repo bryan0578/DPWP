@@ -24,21 +24,30 @@ class FavoriteGame(object):
     def compile_list(self):
         output = ''
         for game in self.__games_list:
-            output += game.i + ' ' + game.s + '<br />'
+            output += '<div id="results1">' + game.game + ' ' + game.players + '</div><div id="results2"> ' + game.i + ' ' + str(game.s) + '</div>'
         return output
+
+    def calc_average(self):
+        s = []
+        for game in self.__games_list:
+            s.append(game.s)
+        num = len(s)
+        total_sum = sum(s)
+        average = total_sum/num
+        return  'Your average high schore is ' + str(average)
 
 
 #this is my data object
 class HighScores(object):
     def __init__(self):
         self.game = ''
-        self.__score = ''
+        self.__score = int()
         self.__initials = ''
         self.players = ''
 
     @property
     def score(self):
-        pass
+        return self.__score
 
     @score.setter
     def score(self, s):
@@ -46,7 +55,7 @@ class HighScores(object):
 
     @property
     def initials(self):
-        pass
+        return self.__initials
 
     @initials.setter
     def initials(self, i):
@@ -54,12 +63,3 @@ class HighScores(object):
 
 
 
-
-
-
-
-
-
-#set up a data object and methods
-
-#set up additional classes

@@ -82,3 +82,6 @@ h2{
   background-image: linear-gradient(to bottom, #fc893c, #57330c);
   text-decoration: none;
 }
+#results{
+    color:#fff;
+}
