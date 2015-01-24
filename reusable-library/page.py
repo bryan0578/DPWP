@@ -68,13 +68,16 @@ class Page(object):
 <html>'''
 
 
-    #create a method that will print all the html elements to the page
+    #create a method that will print all the html elements for the form view to the page
     def print_out(self):
-        input_page = self.head + self.input + self.close
-        input_page = input_page.format(**locals())
-        return input_page
+        #here I created a method to show the form view this will be called in the main handler to print all the html for the form view
+        form_view = self.head + self.input + self.close
+        form_view = form_view.format(**locals())
+        return form_view
 
+    #create a method that will print all of the html elements for the results view to the page
     def print_results(self):
+        #here I created a method to show the results view this will be called in the main handler under a conditional statement
         self.results = self.head + self.container_head + self.results + self.container_close + self.close
         self.results = self.results.format(**locals())
         return self.results
