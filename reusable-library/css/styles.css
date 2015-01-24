@@ -24,7 +24,7 @@ body{
     margin-top:30px;
     margin-bottom:30px;
 }
-
+/*I styled my form to be centered*/
 #form{
     width:35%;
     border: 2px solid #fff;
@@ -33,6 +33,7 @@ body{
     margin-left:auto;
     margin-right:auto;
 }
+/*Here I styled my h2 tag for the heading of my form and reults page*/
 h2{
     text-align:center;
     background: #34d96e;
@@ -48,6 +49,7 @@ h2{
     border-top-left-radius:7px;
     border-top-right-radius:7px;
 }
+/*This is the styles for my inputs*/
 .input{
     width:100%;
     height:20px;
@@ -56,17 +58,20 @@ h2{
 
 
 }
+/*this is for the container of my divs*/
 .i{
     margin:50px;
     height:20px;
-
 }
+/*This is the styles for the select input*/
 #input{
     height:20px;
 }
+/*This will center the button*/
 #button{
     text-align:center;
 }
+/*this will style the button*/
 .btn {
   background: #34d96e;
   background-image: -webkit-linear-gradient(top, #34d96e, #0b5710);
@@ -83,7 +88,7 @@ h2{
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-
+/*This will style the hover state of the button*/
 .btn:hover {
   background: #fc893c;
   background-image: -webkit-linear-gradient(top, #fc893c, #57330c);
