@@ -56,8 +56,10 @@ class ContentPage(Page):
         #here is the constructor for the super class
         super(ContentPage, self).__init__()
 
-        self.__list_inputs = ''
+        #this is where I set
+        self.__list_content = ''
         self.num = 0
+
         self.content_head = '''
         <div id="content">
             <h3>Shirts Info</h3>
@@ -72,15 +74,15 @@ class ContentPage(Page):
         self.content_close = '</p></div>'
 
     @property
-    def inputs(self):
-        return self.__list_inputs
+    def content(self):
+        return self.__list_content
 
 
-    @inputs.setter
-    def inputs(self, arr):
-        self.inputs = arr
+    @content.setter
+    def content(self, arr):
+        self.content = arr
         for item in arr:
-            self.__list_inputs += item[self.num]
+            self.__list_content += item[self.num]
 
     def print_out(self):
         return self._head + self._body + self.content_head + self.content_name + self.data.name + self.content_size + self.data.size + self.content_img + self.data.img + self.content_img2 +self.content_description + self.data.description + self.content_price + self.data.price + self.content_sale + self.data.final_price + self.content_close + self._close
