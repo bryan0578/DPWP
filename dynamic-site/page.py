@@ -5,7 +5,7 @@ DPW
 Dynamic Site
 '''
 
-
+#created a pge class to hold the universal html code that will be apart of every page
 class Page(object):#borrow stuff from object class
     def __init__(self):
         self._head = '''
