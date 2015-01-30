@@ -56,14 +56,18 @@ class ContentPage(Page):
         #here is the constructor for the super class
         super(ContentPage, self).__init__()
 
-        #this is where I set
+        #this is where I set up the place where the content will be and a number for the array
+        #this is a private attribute so a getter and setter will be needed
         self.__list_content = ''
         self.num = 0
 
+        #Here I set up the part of the html that will be at the beginning of the content
         self.content_head = '''
         <div id="content">
             <h3>Shirts Info</h3>
             '''
+        #This is the html code that will be incorporated with the content from the data objects to create the content
+        #This and the information from the data objects will create the content pages
         self.content_name = '<p><strong>Name: </strong>'
         self.content_size = '<br /><p><strong>Sizes: </strong>'
         self.content_img = '<div id="img"><img src="'
