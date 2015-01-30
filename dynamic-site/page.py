@@ -42,6 +42,7 @@ class Page(object):
     </body>
 </html>'''
 
+    #this is the method used to print out the basic structure of the page without the content pages
     def print_out(self):
         return self._head + self._body + self._close
 
