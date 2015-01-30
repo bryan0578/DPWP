@@ -6,8 +6,10 @@ Dynamic Site
 '''
 
 #created a pge class to hold the universal html code that will be apart of every page
-class Page(object):#borrow stuff from object class
+class Page(object):
+    #constructor function that initializes the class
     def __init__(self):
+        #here I created the beginning portion of the html code with the _head attribute
         self._head = '''
 <!DOCTYPE HTML>
 <html>
@@ -16,6 +18,7 @@ class Page(object):#borrow stuff from object class
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>'''
+        #This holds the part of the body html code that will be apart of every page
         self._body = '''
         <div id="container">
             <h1> Beneath The Sky Web Store</h1>
@@ -33,6 +36,7 @@ class Page(object):#borrow stuff from object class
                 </ul>
             </nav>
         '''
+        #This holds the closing html tags
         self._close = '''
         </div>
     </body>
