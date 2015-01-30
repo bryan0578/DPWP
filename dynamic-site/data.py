@@ -33,7 +33,9 @@ class Shirt(object):
         woman.price = '$15'
         woman.final_price = '$7.50'
 
+        #This is my second instance of the the TShirts data object
         skull = TShirts()
+        #I created a second set of data that will use the data object
         skull.id = 'metal_skull'
         skull.name = 'Metal Skull'
         skull.size = 'Sm, Med, Lg, Xl, XXL'
@@ -42,7 +44,9 @@ class Shirt(object):
         skull.price = '$15'
         skull.final_price = '$7.50'
 
+        #This is my third instance of the TShirts class
         three_b = TShirts()
+        #Here I created a third set of data for the data object
         three_b.id = "three_b"
         three_b.name = "Three B's"
         three_b.size = 'Xs, Sm, Med, Lg, Xl, XXL'
@@ -51,7 +55,9 @@ class Shirt(object):
         three_b.price = '$15'
         three_b.final_price = '$7.50'
 
+        #This is my fourth instance of the TShirts class
         f_bomb = TShirts()
+        #I created a fourth set of data for the data object
         f_bomb.id = "f_bomb"
         f_bomb.name = 'F-Bomb'
         f_bomb.size = 'Sm, Med, Lg, Xl, XXL'
@@ -60,7 +66,9 @@ class Shirt(object):
         f_bomb.price = '$15'
         f_bomb.final_price = '$7.50'
 
+        #This is my fifth instance of the TShirts class
         hood = TShirts()
+        #I created a fifth set of data for the data object
         hood.id = 'hoody'
         hood.name = 'Respect for the Dead'
         hood.size = 'Sm, Med, Lg, Xl, XXL'
@@ -69,7 +77,15 @@ class Shirt(object):
         hood.price = '$55'
         hood.final_price = '$35'
 
+        #since I used variables instead of attributes they are not accessible outside of the class
+        #Here I created an attribute that will hold all of the variables in an array
+        #This makes the variables accessible outside of the class
         self.shirts = [woman, skull, three_b, f_bomb, hood]
+
+        #All of the data created here will be used by to fill in the content portion of the pages
+        #I created five sets of data for the data object so I will have five different pages
+        #All information here was taken created by me
+        #The images used were taken from my band.
 
 
 
