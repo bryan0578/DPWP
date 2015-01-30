@@ -47,10 +47,15 @@ class Page(object):
     def print_out(self):
         return self._head + self._body + self._close
 
+
 #here I created a class that inherits from the page class making the page class a super class
+#I used the Page object to show that the ContentPage will inherit from the Page class
 class ContentPage(Page):
+    #This is the constructor function that will initialize the class
     def __init__(self):
+        #here is the constructor for the super class
         super(ContentPage, self).__init__()
+        
         self.__list_inputs = ''
         self.num = 0
         self.content_head = '''
