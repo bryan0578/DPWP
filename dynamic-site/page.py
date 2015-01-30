@@ -82,12 +82,14 @@ class ContentPage(Page):
     @property
     #this is the method to read the attribute
     def content(self):
-        #here is where it is returned 
+        #here is where it is returned
         return self.__list_content
 
-
+    #here I created a setter this will make the private attribute writeable so that we can change it
     @content.setter
+    #here I set up the method to pull the attribute and an array
     def content(self, arr):
+        #here is where the array will be located
         self.content = arr
         for item in arr:
             self.__list_content += item[self.num]
