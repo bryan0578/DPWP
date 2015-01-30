@@ -55,7 +55,7 @@ class ContentPage(Page):
     def __init__(self):
         #here is the constructor for the super class
         super(ContentPage, self).__init__()
-        
+
         self.__list_inputs = ''
         self.num = 0
         self.content_head = '''
