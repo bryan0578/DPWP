@@ -6,6 +6,7 @@ Dynamic Site
 '''
 
 #created a pge class to hold the universal html code that will be apart of every page
+#this will become a super class
 class Page(object):
     #constructor function that initializes the class
     def __init__(self):
@@ -46,7 +47,7 @@ class Page(object):
     def print_out(self):
         return self._head + self._body + self._close
 
-
+#here I created a class that inherits from the page class making the page class a super class
 class ContentPage(Page):
     def __init__(self):
         super(ContentPage, self).__init__()
