@@ -91,9 +91,12 @@ class ContentPage(Page):
     def content(self, arr):
         #here is where the array will be located
         self.content = arr
+        #this for loop will loop through the array and get the content by the item in each array
         for item in arr:
             self.__list_content += item[self.num]
 
+    #This is the method that will override the previous print out method through polymorphism and return all of the content separated by the arrays
+    #This will allow me to pull the information from each array independently creating 5 different content pages.
     def print_out(self):
         return self._head + self._body + self.content_head + self.content_name + self.data.name + self.content_size + self.data.size + self.content_img + self.data.img + self.content_img2 +self.content_description + self.data.description + self.content_price + self.data.price + self.content_sale + self.data.final_price + self.content_close + self._close
 
