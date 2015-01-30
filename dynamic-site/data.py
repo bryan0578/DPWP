@@ -5,22 +5,26 @@ DPW
 Dynamic Site
 '''
 
-
+#I created a data object to hold data
 class TShirts(object):
+    #This is the constructor function that initializes the class
     def __init__(self):
-        self.id = 0
+        self.id = ''
         self.name = ''
         self.size = ''
         self.img = ''
         self.description = ''
-        self.price = 0
-        self.final_price = 0
+        self.price = ''
+        self.final_price = ''
 
 
-
+#Created a class of data that use the data object
 class Shirt(object):
+    #This is the constructor function that initializes the class
     def __init__(self):
+        #This is the first instance of the TShirts class
         woman = TShirts()
+        #I created data that will use the data object
         woman.id = 'victorian_woman'
         woman.name = 'Victorian Woman'
         woman.size = 'Sm, Med, Lg, Xl, XXL'
