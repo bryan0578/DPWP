@@ -77,8 +77,12 @@ class ContentPage(Page):
         self.content_sale = '<br /><strong>Sale Price: </strong>'
         self.content_close = '</p></div>'
 
+    #this is the where I created a setter for the private attribute __list_content
+    #this will make it readable
     @property
+    #this is the method to read the attribute
     def content(self):
+        #here is where it is returned 
         return self.__list_content
 
 
